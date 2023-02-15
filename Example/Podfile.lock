@@ -3,6 +3,7 @@ PODS:
   - Core (0.1.0):
     - Network
     - ObjectMapper (= 4.2.0)
+    - RxSwift
   - Network (0.1.0):
     - Alamofire (~> 5.4)
     - ObjectMapper (= 4.2.0)
@@ -39,7 +40,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  Core: 41af4582fed71b75311752e3c8c6a71c7d0d8c83
+  Core: 11085c9dffa21b6ae0c211719a2d91118364fb28
   Network: 84f7806ca87e5aa094c3f5a326f22a7b89e06d1e
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27

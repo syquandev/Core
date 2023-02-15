@@ -23,7 +23,7 @@ public class Core: NSObject {
 }
 
 extension String {
-    var lcz: String {
+    public var lcz: String {
         return self.localized//localized(using: nil, in: _getBundle())
     }
 }

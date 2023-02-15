@@ -28,7 +28,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/95286760/Core.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.swift_version = '4.2'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'Core/Classes/**/*'
   
@@ -42,5 +43,6 @@ TODO: Add long description of the pod here.
   }
   
   s.dependency 'Network'
+  s.dependency 'RxSwift'
   s.dependency 'ObjectMapper', '4.2.0'
 end
