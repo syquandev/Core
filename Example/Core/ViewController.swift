@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         titleLabel.text = "abc".lcz
         setupUI()
+        HUD.showAlert("Đã thêm vào danh sách bạn bè", icon: "hud_success")
     }
 
     override func didReceiveMemoryWarning() {

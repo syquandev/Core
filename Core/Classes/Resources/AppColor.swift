@@ -40,7 +40,7 @@ public enum AppColor{
 }
 
 public class AppColorDefine: NSObject{
-    public static let primary                   =   UIColor.init(hexString: "#24A8D8")!
+    public static let primary                   =   UIColor.init(hexString: "#E7F0EE")!
     public static let primary2                  =   UIColor.init(hexString: "#24A8D8")!
     public static let text                      =   UIColor.init(hexString: "#000000")!
     public static let textLight                 =   UIColor.init(hexString: "#9C9C9C")!
