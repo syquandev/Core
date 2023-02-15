@@ -171,6 +171,16 @@
 		83D0D89BD3430AB2973F8D00F959DD01 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574AAB377A6009726B3B67890FF1E20E /* UserModel.swift */; };
 		84528200BAB38412EC5CC5BFA5CF4B45 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B70190086C381F4483053F64BCAD4A /* ToastCenter.swift */; };
 		84D1C224299CC7AE00DCD925 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C223299CC7AE00DCD925 /* ImageExtensions.swift */; };
+		84D1C228299CD45A00DCD925 /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C226299CD45800DCD925 /* IndicatorType.swift */; };
+		84D1C22C299CD49500DCD925 /* IndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C22A299CD49300DCD925 /* IndicatorProtocol.swift */; };
+		84D1C22F299CD50900DCD925 /* LBIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C22D299CD50600DCD925 /* LBIndicator.swift */; };
+		84D1C233299CD54500DCD925 /* BallPulseSyncIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C232299CD54500DCD925 /* BallPulseSyncIndicator.swift */; };
+		84D1C235299CD5FB00DCD925 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C234299CD5FB00DCD925 /* NVActivityIndicatorShape.swift */; };
+		84D1C237299CD61E00DCD925 /* BallSpinFadeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C236299CD61E00DCD925 /* BallSpinFadeIndicator.swift */; };
+		84D1C239299CD65500DCD925 /* LineScaleIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C238299CD65500DCD925 /* LineScaleIndicator.swift */; };
+		84D1C23B299CD66E00DCD925 /* BallBeatIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C23A299CD66E00DCD925 /* BallBeatIndicator.swift */; };
+		84D1C23D299CD70000DCD925 /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C23C299CD70000DCD925 /* LoadingButton.swift */; };
+		84D1C23F299CD72D00DCD925 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C23E299CD72D00DCD925 /* Extensions.swift */; };
 		850F1DF8D449C69D51D0C7E41D5A84F9 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E96BD73583F1B8CF41456232899326 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		853AA1772407FC32BB3B7376B00167A2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4217F89AD4851948D4885E3ACFFD430 /* API.swift */; };
 		853B32FE951B9E9D526EB0DB72515BD4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AADE3F8047CEEEBA1BE7DEC9962F42 /* Reachability.swift */; };
@@ -676,6 +686,16 @@
 		84A29EC5AFF4F5DFF4DE265629313DC6 /* SynchronizedOnType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedOnType.swift; path = RxSwift/Concurrency/SynchronizedOnType.swift; sourceTree = "<group>"; };
 		84CCFDC8E24C7C99DC9DB318DFDD6ED6 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		84D1C223299CC7AE00DCD925 /* ImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
+		84D1C226299CD45800DCD925 /* IndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorType.swift; sourceTree = "<group>"; };
+		84D1C22A299CD49300DCD925 /* IndicatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorProtocol.swift; sourceTree = "<group>"; };
+		84D1C22D299CD50600DCD925 /* LBIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBIndicator.swift; sourceTree = "<group>"; };
+		84D1C232299CD54500DCD925 /* BallPulseSyncIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallPulseSyncIndicator.swift; sourceTree = "<group>"; };
+		84D1C234299CD5FB00DCD925 /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		84D1C236299CD61E00DCD925 /* BallSpinFadeIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallSpinFadeIndicator.swift; sourceTree = "<group>"; };
+		84D1C238299CD65500DCD925 /* LineScaleIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineScaleIndicator.swift; sourceTree = "<group>"; };
+		84D1C23A299CD66E00DCD925 /* BallBeatIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallBeatIndicator.swift; sourceTree = "<group>"; };
+		84D1C23C299CD70000DCD925 /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
+		84D1C23E299CD72D00DCD925 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		853799206895AA3303DDE39BADB9D53F /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		85C77B043B71D17611B774B3AEBD7C7C /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = RxSwift/Observables/Buffer.swift; sourceTree = "<group>"; };
 		86892114829FC78D83AFF53137B42008 /* Pods-Core_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Core_Example-Info.plist"; sourceTree = "<group>"; };
@@ -1092,6 +1112,30 @@
 			);
 			name = Assets;
 			path = Core/Assets;
+			sourceTree = "<group>";
+		};
+		84D1C225299CD44800DCD925 /* LoadingButton */ = {
+			isa = PBXGroup;
+			children = (
+				84D1C229299CD48900DCD925 /* Indicators */,
+				84D1C226299CD45800DCD925 /* IndicatorType.swift */,
+				84D1C23C299CD70000DCD925 /* LoadingButton.swift */,
+			);
+			path = LoadingButton;
+			sourceTree = "<group>";
+		};
+		84D1C229299CD48900DCD925 /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				84D1C22A299CD49300DCD925 /* IndicatorProtocol.swift */,
+				84D1C22D299CD50600DCD925 /* LBIndicator.swift */,
+				84D1C232299CD54500DCD925 /* BallPulseSyncIndicator.swift */,
+				84D1C234299CD5FB00DCD925 /* NVActivityIndicatorShape.swift */,
+				84D1C236299CD61E00DCD925 /* BallSpinFadeIndicator.swift */,
+				84D1C238299CD65500DCD925 /* LineScaleIndicator.swift */,
+				84D1C23A299CD66E00DCD925 /* BallBeatIndicator.swift */,
+			);
+			path = Indicators;
 			sourceTree = "<group>";
 		};
 		86BE7B79BE85281FDCDD7EAD245E32E5 /* SVProgressHUD */ = {
@@ -1588,6 +1632,7 @@
 		EBE34F786F088DAB0B6E77C833BD6166 /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				84D1C225299CD44800DCD925 /* LoadingButton */,
 				FA000ECE8FFCBCFB72AF6EE51AA7D514 /* AnimatedTextField */,
 				0FEE3733785152907AE95CF3EB43CE7F /* HUD */,
 				258CB6292E1AD696931F09C5336E7F55 /* Nav */,
@@ -1678,6 +1723,7 @@
 				EB9ABCA0E44FC96C89D988CDA5270E61 /* UIViewAutoLayout.swift */,
 				34F847CF6D9DE8D3FE58D44E9DFE812F /* UIViewExtension.swift */,
 				84D1C223299CC7AE00DCD925 /* ImageExtensions.swift */,
+				84D1C23E299CD72D00DCD925 /* Extensions.swift */,
 			);
 			name = Extension;
 			path = Core/Classes/Extension;
@@ -2363,6 +2409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D1C239299CD65500DCD925 /* LineScaleIndicator.swift in Sources */,
 				F9BFBD6DD87C276966991C44E4196A18 /* AIViewControllerExtensions.swift in Sources */,
 				F58C19AD5D68C682B7D0160CAF5D101C /* AIXibViewLoader.swift in Sources */,
 				F938B27D5CD8983149DB7F212A3B865F /* App.swift in Sources */,
@@ -2372,6 +2419,8 @@
 				E5BC644661A0F1E6FF70A7F29A74862D /* AppSound.swift in Sources */,
 				208583448159A53C74EB331EACFA4553 /* Core.swift in Sources */,
 				7A6D62B2EB9E90D6C543B29CA2203481 /* Core-dummy.m in Sources */,
+				84D1C228299CD45A00DCD925 /* IndicatorType.swift in Sources */,
+				84D1C235299CD5FB00DCD925 /* NVActivityIndicatorShape.swift in Sources */,
 				84D1C224299CC7AE00DCD925 /* ImageExtensions.swift in Sources */,
 				C5F888AF53BD5EC9C1F84504388F981D /* CustomNavigationController.swift in Sources */,
 				8CB65E4826C935D4411D9FC24F675555 /* DataCollectionExtension.swift in Sources */,
@@ -2379,10 +2428,17 @@
 				BF35BA62119DD5B059C5F3BA571FDE00 /* HexColors.swift in Sources */,
 				69FE9AE09C4CE3C729D1287D875F73D4 /* HUD.swift in Sources */,
 				54C8B106FC202ED0CB2DC2CCEC4FC2BE /* LanguageModel.swift in Sources */,
+				84D1C23F299CD72D00DCD925 /* Extensions.swift in Sources */,
 				33C81BCEB2BB7398D4E68C7E0E4C2838 /* Localize.swift in Sources */,
 				85CA1DC0789770DBF4AF4B38EB3A09B6 /* Main.storyboard in Sources */,
+				84D1C233299CD54500DCD925 /* BallPulseSyncIndicator.swift in Sources */,
+				84D1C23D299CD70000DCD925 /* LoadingButton.swift in Sources */,
 				03398F27A4B8B4E9C3A5C75E7A6B589F /* Presenter.swift in Sources */,
 				0BDA4FB83B93C4DF9AC34AF792D6A908 /* Router.swift in Sources */,
+				84D1C22F299CD50900DCD925 /* LBIndicator.swift in Sources */,
+				84D1C237299CD61E00DCD925 /* BallSpinFadeIndicator.swift in Sources */,
+				84D1C23B299CD66E00DCD925 /* BallBeatIndicator.swift in Sources */,
+				84D1C22C299CD49500DCD925 /* IndicatorProtocol.swift in Sources */,
 				A2281BF8C68A806026D7F29CB5B56F44 /* SoundUtilities.swift in Sources */,
 				7763878D5741B09CDDB02D617BD0494A /* String+LocalizedBundleTableName.swift in Sources */,
 				0BCFBFC9B9C743FFC536F9AE559932FF /* ToastNotificationView.swift in Sources */,

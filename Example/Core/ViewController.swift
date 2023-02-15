@@ -12,10 +12,19 @@ import Core
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var btnLine: LoadingButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = "abc".lcz
         setupUI()
+        
+        btnLine.setTitle("OK")
+        btnLine.indicator = IndicatorType.ballPulseSync.indicator
+        btnLine.addTarget(self, action: #selector(tapButton(_:)), for: .touchUpInside)
+    }
+    
+    @objc private func tapButton(_ sender: LoadingButton) {
+        sender.isLoading ? sender.hideLoader() : sender.showLoader(userInteraction: true)
         HUD.showAlert("Đã thêm vào danh sách bạn bè", icon: "hud_success")
     }
 
@@ -25,8 +34,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onTest(_ sender: Any) {
-        let vc : ViewController1 = ViewController1.createFromStoryboard(storyboardName: "Main", bundle: Bundle.main)
-        Presenter.presentedController(vc)
+//        let vc : ViewController1 = ViewController1.createFromStoryboard(storyboardName: "Main", bundle: Bundle.main)
+//        Presenter.presentedController(vc)
     }
     
     func setupUI() {
