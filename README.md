@@ -17,12 +17,12 @@ Core is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Core'
+pod 'Core', git: 'https://github.com/syquandev/Core'
 ```
 
 ## Author
 
-95286760, lasyquan@gmail.com
+Sy Quan, syquandev@gmail.com
 
 ## License
 
