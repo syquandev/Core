@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = "abc".lcz
+        setupUI()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +26,20 @@ class ViewController: UIViewController {
     @IBAction func onTest(_ sender: Any) {
         let vc : ViewController1 = ViewController1.createFromStoryboard(storyboardName: "Main", bundle: Bundle.main)
         Presenter.presentedController(vc)
+    }
+    
+    func setupUI() {
+        setupTapGesture()
+    }
+
+    func setupTapGesture() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapGesture))
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc
+    func tapGesture() {
+        view.endEditing(true)
     }
 }
 

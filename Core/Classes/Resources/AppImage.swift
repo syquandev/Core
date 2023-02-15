@@ -99,7 +99,7 @@ public extension UIButton{
         set {
             if let val = newValue,
                 let img = AppImage(rawValue: val){
-                self.setImage(img.image, for: UIControlState.selected)
+                self.setImage(img.image, for: UIControl.State.selected)
             }
         }
     }
@@ -112,7 +112,7 @@ public extension UIButton{
         set {
             if let val = newValue,
                 let img = AppImage(rawValue: val){
-                self.setImage(img.image, for: UIControlState.disabled)
+                self.setImage(img.image, for: UIControl.State.disabled)
             }
         }
     }
