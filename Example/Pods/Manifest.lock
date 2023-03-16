@@ -1,52 +1,27 @@
 PODS:
-  - Alamofire (5.6.4)
   - Core (0.1.0):
-    - Network
     - ObjectMapper (= 4.2.0)
     - RxSwift
-  - Network (0.1.0):
-    - Alamofire (~> 5.4)
-    - ObjectMapper (= 4.2.0)
-    - RxSwift (~> 5)
-    - SVProgressHUD
-    - TUSKit (~> 1.4.2)
   - ObjectMapper (4.2.0)
   - RxSwift (5.1.3)
-  - SVProgressHUD (2.2.5)
-  - TUSKit (1.4.2)
 
 DEPENDENCIES:
   - Core (from `../`)
-  - Network (from `https://github.com/syquandev/Network`)
 
 SPEC REPOS:
   trunk:
-    - Alamofire
     - ObjectMapper
     - RxSwift
-    - SVProgressHUD
-    - TUSKit
 
 EXTERNAL SOURCES:
   Core:
     :path: "../"
-  Network:
-    :git: https://github.com/syquandev/Network
-
-CHECKOUT OPTIONS:
-  Network:
-    :commit: 6d7e2ddfb38b5b0985a7141fbff5b41982dd8fec
-    :git: https://github.com/syquandev/Network
 
 SPEC CHECKSUMS:
-  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  Core: 11085c9dffa21b6ae0c211719a2d91118364fb28
-  Network: 84f7806ca87e5aa094c3f5a326f22a7b89e06d1e
+  Core: d9bfe83553d83a17f697dfc865f3f55ff4dd2bd7
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  TUSKit: 4bcc2fe13e1b4d6c3bfbaca57d64e64c1be31201
 
-PODFILE CHECKSUM: 39a8948403951566845f15e3bfc258a5dd8005c9
+PODFILE CHECKSUM: 36ae0a15c72c64543f8722b4a4b580ae9006f77c
 
 COCOAPODS: 1.11.3

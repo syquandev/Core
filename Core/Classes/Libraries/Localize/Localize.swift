@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Network
+//import Network
 
 let LCLCurrentLanguageKey = "LCLCurrentLanguageKey"
 let LCLCurrentLanguageName = "LCLCurrentLanguageName"
@@ -134,7 +134,7 @@ public extension String {
                 
                 var local = lowscape.localized
                 if lowscape.first != s.first{
-                    local = local.capitalizingFirstLetter()
+//                    local = local.capitalizingFirstLetter()
                 }
                 
                 text.append("\(n)")
@@ -182,23 +182,23 @@ open class Localize: NSObject {
         return defaultLanguage()
     }
     
-    open class func getSavedLanguage() -> LanguageModel {
-        
-        let language = LanguageModel()
-        
-        
-        if let currentCode = UserDefaults.standard.object(forKey: LCLCurrentLanguageKey) as? String, let currentName = UserDefaults.standard.object(forKey: LCLCurrentLanguageName) as? String
-        {
-            language.code = currentCode
-            language.name = currentName
-        }
-        else
-        {
-            language.code = self.defaultLanguage()
-//            language.name = "English"
-        }
-        return language
-    }
+//    open class func getSavedLanguage() -> LanguageModel {
+//
+//        let language = LanguageModel()
+//
+//
+//        if let currentCode = UserDefaults.standard.object(forKey: LCLCurrentLanguageKey) as? String, let currentName = UserDefaults.standard.object(forKey: LCLCurrentLanguageName) as? String
+//        {
+//            language.code = currentCode
+//            language.name = currentName
+//        }
+//        else
+//        {
+//            language.code = self.defaultLanguage()
+////            language.name = "English"
+//        }
+//        return language
+//    }
     
     /**
      Change the current language
@@ -211,7 +211,7 @@ open class Localize: NSObject {
             UserDefaults.standard.synchronize()
             NotificationCenter.default.post(name: Notification.Name(rawValue: LCLLanguageChangeNotification), object: nil)
         }
-        Device.shared.language = Localize.currentLanguage()
+//        Device.shared.language = Localize.currentLanguage()
     }
     
     open class func setCurrentLanguageCode(_ language: String, name: String) {
@@ -224,8 +224,8 @@ open class Localize: NSObject {
             NotificationCenter.default.post(name: Notification.Name(rawValue: LCLLanguageChangeNotification), object: nil)
 //        }
         
-        Device.shared.language = language
-        Device.shared.languageName = name
+//        Device.shared.language = language
+//        Device.shared.languageName = name
     }
     
     /**

@@ -20,7 +20,7 @@ public class LanguageExtend{
         return [:]
     }
     static func lcz(_ input: String) -> String?{
-        return lang.getValueForKey(input)
+        return ""
     }
 }
 /// bundle & tableName friendly extension

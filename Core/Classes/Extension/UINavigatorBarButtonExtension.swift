@@ -64,7 +64,7 @@ extension UIViewController{
         }
         
         
-        self.addLeftButton(image: UIImage (named: icon), action: #selector(popOrDismissControllerSelector))
+        self.addLeftButton(image: UIImage (name: icon, bundle: Core.getBundle()), action: #selector(popOrDismissControllerSelector))
     }
     
     private func m_isLightNavigation() -> Bool{

@@ -42,7 +42,7 @@ TODO: Add long description of the pod here.
     'Core/Classes/**/*.storyboard']
   }
   
-  s.dependency 'Network'
+#  s.dependency 'Network'
   s.dependency 'RxSwift'
   s.dependency 'ObjectMapper', '4.2.0'
 end

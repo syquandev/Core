@@ -28,7 +28,7 @@ public class ToastNotificationView: UIView {
         }
     }
 
-    private let position: Position
+    public var position: Position
     private var initialTransform: CGAffineTransform {
         switch position {
         case .top:
@@ -86,7 +86,7 @@ public class ToastNotificationView: UIView {
     public var autoHide = true
 
     /// Display time for the notification view in seconds
-    public var displayTime: TimeInterval = 1
+    public var displayTime:  TimeInterval = 1
 
     /// Appearence animation duration
     public var showAnimationDuration = 0.3
