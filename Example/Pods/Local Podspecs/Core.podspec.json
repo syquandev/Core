@@ -35,6 +35,9 @@
     ],
     "ObjectMapper": [
       "4.2.0"
+    ],
+    "FontAwesome": [
+
     ]
   },
   "swift_version": "4.2"

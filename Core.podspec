@@ -45,4 +45,5 @@ TODO: Add long description of the pod here.
 #  s.dependency 'Network'
   s.dependency 'RxSwift'
   s.dependency 'ObjectMapper', '4.2.0'
+  s.dependency 'FontAwesome'
 end
