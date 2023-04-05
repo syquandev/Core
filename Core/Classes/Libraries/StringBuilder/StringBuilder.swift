@@ -387,19 +387,18 @@ public class StringBuilder: NSObject {
 //    }
 //
 //
-//    @discardableResult
-//    public func highlightString(_ string: String?) -> StringBuilder{
-//        guard let string = string else{
-//            return self
-//        }
-//        self.value.string.ranges(of: string).forEach { (rangeIndex) in
-//            let attributes:[NSAttributedStringKey:Any] =  [.foregroundColor: getCacheColor(.primary)]
-//            let range = NSRange(rangeIndex, in: self.value.string)
-//            self.value.addAttributes(attributes, range: range)
-//        }
-//        return self
-//    }
-//
+    @discardableResult
+    public func highlightString(_ string: String?) -> StringBuilder{
+        guard let string = string else{
+            return self
+        }
+        self.value.string.ranges(of: string).forEach { (rangeIndex) in
+            let attributes:[NSAttributedString.Key:Any] =  [.foregroundColor: getCacheColor(.primary)]
+            let range = NSRange(rangeIndex, in: self.value.string)
+            self.value.addAttributes(attributes, range: range)
+        }
+        return self
+    }
     
     @discardableResult
     public func addColor(_ color: UIColor?, forString string: String?, indexs: [Int] = [], font: AppFont? = nil) -> StringBuilder{
@@ -408,17 +407,17 @@ public class StringBuilder: NSObject {
             return self
         }
         
-//        let arrs = value.string.ranges(of: string)
-//        for(index, element) in arrs.enumerated(){
-//            if indexs.count == 0 || indexs.contains(index){
-//                var attributes: [NSAttributedStringKey:Any] =  [.foregroundColor: color]
-//                if let f = font{
-//                    attributes.safeAdd(key: .font, value: f.getFont())
-//                }
-//                let range = NSRange(element, in: value.string)
-//                value.addAttributes(attributes, range: range)
-//            }
-//        }
+        let arrs = value.string.ranges(of: string)
+        for(index, element) in arrs.enumerated(){
+            if indexs.count == 0 || indexs.contains(index){
+                var attributes: [NSAttributedString.Key:Any] =  [.foregroundColor: color]
+                if let f = font{
+                    attributes.safeAdd(key: .font, value: f.getFont())
+                }
+                let range = NSRange(element, in: value.string)
+                value.addAttributes(attributes, range: range)
+            }
+        }
         
         return self
     }

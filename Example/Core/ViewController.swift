@@ -47,8 +47,8 @@ class ViewController: UIViewController {
     
     func getTitleDisplay() -> NSAttributedString?{
         builder.append("Chúc mừng bạn đã trở thành đối tác tiếp thị liên kết của Hahalolo.", font: AppFont.bold_15, color: AppColor.red).enter().append("Truy cập ngay để nhận được nhiều cơ hội hấp dẫn 😍", font: AppFont.regular_15, color: AppColor.black)
-        builder.addColor(.black, forString: "Chúc mừng bạn đã trở thành đối tác tiếp thị liên kết của Hahalolo.", font: AppFont.bold_17)
-        builder.addColor(.black, forString: "Truy cập ngay để nhận được nhiều cơ hội hấp dẫn 😍", font: AppFont.bold_17)
+        builder.addColor(.red, forString: "Chúc mừng bạn đã trở thành đối tác tiếp thị liên kết của Hahalolo.", font: AppFont.bold_17)
+        builder.addColor(.black, forString: "Truy cập ngay để nhận được nhiều cơ hội hấp dẫn 😍", font: AppFont.regular_15)
         return builder.value
     }
     

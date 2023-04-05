@@ -144,6 +144,8 @@
 		833E0C4E387B99F7F1525E0897BDB3C4 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C608D618857D5C0139E6210AFD9363D /* Switch.swift */; };
 		8417086FD30CAC12F0492636B07A9A0F /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A02525F86EBB1226DE0542E04C277 /* DispatchQueue+Extensions.swift */; };
 		845D84F29B9E7549FB0132DAEDF656C1 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E82596C0EA83C583C44394DE83ACD /* Deprecated.swift */; };
+		847B1F8A29DD35F3007823EF /* SubStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B1F8929DD35F3007823EF /* SubStringExtensions.swift */; };
+		847B1F8C29DD362A007823EF /* DictinaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B1F8B29DD362A007823EF /* DictinaryExtensions.swift */; };
 		850D812A9EFB184985F88F5BA9DAAA3A /* RetryWhen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F851857F23FF5E0151FDE39F4026C62 /* RetryWhen.swift */; };
 		86E7B14095F6E29118EC730564B6E046 /* TakeWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C74A4C8605AD049545804C42D38764 /* TakeWhile.swift */; };
 		8779232B9DB56456834A7ED080D528EC /* UIViewFrameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3F15C70AEA57BE8722FD405A7AE1AA /* UIViewFrameExtension.swift */; };
@@ -524,6 +526,8 @@
 		81B923AAEB254F6D55E1A33A60DBD4A7 /* FontAwesome.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FontAwesome.swift.release.xcconfig; sourceTree = "<group>"; };
 		83D4052C301029A816B74212ABB2B4F4 /* DisposeBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisposeBase.swift; path = RxSwift/Disposables/DisposeBase.swift; sourceTree = "<group>"; };
 		844C79DF28594DE4B6D93C2E54BFBB1A /* FontAwesome.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FontAwesome.swift-prefix.pch"; sourceTree = "<group>"; };
+		847B1F8929DD35F3007823EF /* SubStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubStringExtensions.swift; sourceTree = "<group>"; };
+		847B1F8B29DD362A007823EF /* DictinaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictinaryExtensions.swift; sourceTree = "<group>"; };
 		85AEFB9797F73F445F5F8FDC0FCA8F1C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		866A7AD5DE15C7B925971A10CE590DD8 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		866CAD4861D99F8B58779861BF877147 /* Core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Core.modulemap; sourceTree = "<group>"; };
@@ -1187,6 +1191,8 @@
 				702EA74C7992BA7C4AC7E64DAD12318B /* UIViewAutoLayout.swift */,
 				E482CDDD1D054556E1AA51B10AAD7513 /* UIViewExtension.swift */,
 				AF3F15C70AEA57BE8722FD405A7AE1AA /* UIViewFrameExtension.swift */,
+				847B1F8929DD35F3007823EF /* SubStringExtensions.swift */,
+				847B1F8B29DD362A007823EF /* DictinaryExtensions.swift */,
 			);
 			name = Extension;
 			path = Core/Classes/Extension;
@@ -1874,10 +1880,12 @@
 				7FC259F06FABF7253D0E86D65678EE2A /* Localize.swift in Sources */,
 				AE8F3F665ECF24D539C9C401E393E9E6 /* Main.storyboard in Sources */,
 				473979BBFD437D934BEE43EEDC3B174C /* NVActivityIndicatorShape.swift in Sources */,
+				847B1F8A29DD35F3007823EF /* SubStringExtensions.swift in Sources */,
 				5FF1CD8D0C045AE7DF12ECC0A4E017C6 /* Presenter.swift in Sources */,
 				43699518E2D5B8483BD0E282BEB77DE1 /* Router.swift in Sources */,
 				D35622A2B3D53D6B9749E4E5FD7FF306 /* SoundUtilities.swift in Sources */,
 				F8B9BA38EE1A544AE76944C6CEAFDAA2 /* String+LocalizedBundleTableName.swift in Sources */,
+				847B1F8C29DD362A007823EF /* DictinaryExtensions.swift in Sources */,
 				7502E8C73251AFDC6596120EF74986DB /* StringBuilder.swift in Sources */,
 				E509F78B33916CF69FA01FD58360D6EB /* ToastNotificationView.swift in Sources */,
 				304287351E668496DEE6D57586BD07E1 /* UINavigatorBarButtonExtension.swift in Sources */,
