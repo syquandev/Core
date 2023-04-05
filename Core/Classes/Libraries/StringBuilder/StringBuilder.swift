@@ -96,34 +96,33 @@ public class StringBuilder: NSObject {
     }
     
     public func getCacheFont(_ font: AppFont) -> UIFont{
-//        switch font {
-//        case .regular_12:
-//            return subFont
-//
-//        case .regular_15:
-//            return normalFont
-//        case .medium_15:
-//            return mediumFont
-//        case .bold_15:
-//            return boldFont
-//
-//        case .regular_16:
-//            return semiFont
-//        case .bold_16:
-//            return semiBoldFont
-//
-//        case .regular_18:
-//            return titleFont
-//        case .bold_18:
-//            return titleBoldFont
-//
-//        case .custom(_, _):
-//            return font.getFont()
-//        default:
-//            return font.getFont()
-//
-//        }
-        return subFont
+        switch font {
+        case .regular_12:
+            return subFont
+            
+        case .regular_15:
+            return normalFont
+        case .medium_15:
+            return mediumFont
+        case .bold_15:
+            return boldFont
+            
+        case .regular_16:
+            return semiFont
+        case .bold_16:
+            return semiBoldFont
+            
+        case .regular_18:
+            return titleFont
+        case .bold_18:
+            return titleBoldFont
+            
+        case .custom(_, _):
+            return font.getFont()
+        default:
+            return font.getFont()
+            
+        }
     }
     
     @discardableResult

@@ -970,13 +970,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B0DDF73877EDCE34C42F74545D25A04 /* Nav */ = {
+		6B0DDF73877EDCE34C42F74545D25A04 /* CustomNavigation */ = {
 			isa = PBXGroup;
 			children = (
 				434676DA27D505D918AD9D4D3D0EEA3D /* CustomNavigationController.swift */,
 				866A7AD5DE15C7B925971A10CE590DD8 /* Main.storyboard */,
 			);
-			path = Nav;
+			path = CustomNavigation;
 			sourceTree = "<group>";
 		};
 		74B88D828059433AD9E5BD5461FF6C4F /* Router */ = {
@@ -1044,7 +1044,7 @@
 				A26C9D7EB035A6042A96568E23ED6A7B /* CustomControl */,
 				50C5F1B14BD97D1FE791CDB0CBF68528 /* HUD */,
 				D95697527C88FCA62F9DEE92CCD607EB /* LoadingButton */,
-				6B0DDF73877EDCE34C42F74545D25A04 /* Nav */,
+				6B0DDF73877EDCE34C42F74545D25A04 /* CustomNavigation */,
 				83CDFD88F2F31BD207D5DFA3E8701177 /* Toast */,
 			);
 			name = Control;

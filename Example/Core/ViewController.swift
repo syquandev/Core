@@ -11,11 +11,12 @@ import Core
 
 class ViewController: UIViewController {
 
+    let builder = StringBuilder()
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var btnLine: LoadingButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = "abc".lcz
+        titleLabel.attributedText = getTitleDisplay()
         setupUI()
         
         btnLine.setTitle("OK")
@@ -39,8 +40,18 @@ class ViewController: UIViewController {
 //        view.albumId = albumId
 //        view.index = index
 //        m.show()
+        
+         
+        
     }
-
+    
+    func getTitleDisplay() -> NSAttributedString?{
+        builder.append("Chúc mừng bạn đã trở thành đối tác tiếp thị liên kết của Hahalolo.", font: AppFont.bold_15, color: AppColor.red).enter().append("Truy cập ngay để nhận được nhiều cơ hội hấp dẫn 😍", font: AppFont.regular_15, color: AppColor.black)
+        builder.addColor(.black, forString: "Chúc mừng bạn đã trở thành đối tác tiếp thị liên kết của Hahalolo.", font: AppFont.bold_17)
+        builder.addColor(.black, forString: "Truy cập ngay để nhận được nhiều cơ hội hấp dẫn 😍", font: AppFont.bold_17)
+        return builder.value
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -8,6 +8,8 @@
 import Foundation
 
 public enum AppColor{
+    case black
+    case red
     case primary
     case primary2
     case background
@@ -19,6 +21,10 @@ public enum AppColor{
     
     public func getColor() -> UIColor{
         switch self {
+        case .black:
+            return UIColor.black
+        case .red:
+            return UIColor.red
         case .primary:
             return AppColorDefine.primary
         case .primary2:
