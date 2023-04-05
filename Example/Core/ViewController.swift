@@ -26,6 +26,19 @@ class ViewController: UIViewController {
     @objc private func tapButton(_ sender: LoadingButton) {
         sender.isLoading ? sender.hideLoader() : sender.showLoader(userInteraction: true)
         HUD.showAlert("Đã thêm vào danh sách bạn bè", icon: "hud_success")
+        let datas = BottomMenuItem.create(
+            ["Đồng ý",
+             "Hủy bỏ"])
+        BottomMenuController.create(delegate: self, datas: datas).show()
+//        let view = PageMediaEditAlbumView()
+//        view.delegate = self
+//        let cf = BottomPopupConfiguration()
+//        cf.view = view
+//        let m = BottomPopupController.create(cf)
+//        view.controller = m
+//        view.albumId = albumId
+//        view.index = index
+//        m.show()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,3 +66,18 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: BottomMenuDelegate{
+    public func bottomMenuSelect(_ item: BottomMenuItem, tag: Int) {
+        let index = item.tag
+        switch index {
+        case 0:
+            break
+            
+        case 1:
+            break
+            
+        default:
+            break
+        }
+    }
+}
