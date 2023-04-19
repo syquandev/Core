@@ -1,12 +1,14 @@
 PODS:
-  - Core (0.1.0):
+  - Core (1.0.0):
     - FontAwesome
     - ObjectMapper (= 4.2.0)
     - RxSwift
+    - SwiftDate
   - FontAwesome (4.5.0)
   - FontAwesome.swift (1.9.1)
   - ObjectMapper (4.2.0)
   - RxSwift (5.1.3)
+  - SwiftDate (6.3.1)
 
 DEPENDENCIES:
   - Core (from `../`)
@@ -18,18 +20,20 @@ SPEC REPOS:
     - FontAwesome.swift
     - ObjectMapper
     - RxSwift
+    - SwiftDate
 
 EXTERNAL SOURCES:
   Core:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Core: 3aa647dfea5c073b0751c98cdf56ddab6320a8a0
+  Core: c9a60b6ff3aca9a343b60da44c786e1a4be01801
   FontAwesome: dd8c48bf965e771309d8af17c4d8579217b3e756
   FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
 
-PODFILE CHECKSUM: 2afa7066003a9c18f15997e7c5795f657b34f713
+PODFILE CHECKSUM: 1ef5d2000fc25fb58f0771bc374f6049aa98b0c5
 
 COCOAPODS: 1.11.3
