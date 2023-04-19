@@ -176,6 +176,8 @@
 		7FF6E590FE4E19F1CC9EFB3C7BF1375B /* ISOFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAEAFFE75677549BB965EE867C2C258 /* ISOFormatter.swift */; };
 		829E8FA17C26BAA2BBD2F5CA2E483502 /* ElementStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B6C62894CCFFBD5D6A3FB790C08AFA /* ElementStatusModel.swift */; };
 		841127A577BCEB2C4B5DABB91EED8892 /* AddRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B65710C34F47BE6943F37458BB42B4 /* AddRef.swift */; };
+		84ECD07129EFA1B5002C24A4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECD07029EFA1B5002C24A4 /* Device.swift */; };
+		84ECD07329EFA1E7002C24A4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECD07229EFA1E7002C24A4 /* Config.swift */; };
 		85CDB3E7288DF014F2069A35345674AC /* StartWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC919A1F7BEA174DEB8460A907C36A6E /* StartWith.swift */; };
 		8780397195C27D63CF1D45521BD70D51 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F635129222CEA44644C1513E3C2C238 /* MapError.swift */; };
 		87E7D21E217AF06261C85E92A8A886FD /* AnonymousDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4540994A4189067580AD4724CA00F402 /* AnonymousDisposable.swift */; };
@@ -618,6 +620,8 @@
 		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxSwift; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FD2D5AD4BE08ACB65DC86386E88007 /* Core.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Core.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		83A897ED80DD70BDAAC0954AFEEF98B3 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RxSwift/Observables/Optional.swift; sourceTree = "<group>"; };
+		84ECD07029EFA1B5002C24A4 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		84ECD07229EFA1E7002C24A4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		85451C72776011271C442C8A7EC8C74C /* PublishSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishSubject.swift; path = RxSwift/Subjects/PublishSubject.swift; sourceTree = "<group>"; };
 		85968DD156105ECAEFFF5CFB8EC03BB4 /* RetryWhen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryWhen.swift; path = RxSwift/Observables/RetryWhen.swift; sourceTree = "<group>"; };
 		85AEFB9797F73F445F5F8FDC0FCA8F1C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
@@ -1190,6 +1194,7 @@
 		5DA4CD6BCB06A684A1B33DD01D2BFFBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84ECD06F29EFA1A8002C24A4 /* Device */,
 				FE419B3614331A11D60321D86A163779 /* BaseModel.swift */,
 				5EA80DED96873EFBCFB6EA5A1A8E096C /* ElementObjectModel.swift */,
 				539834579930BE736432BEEED6A6110F /* ElementRootModel.swift */,
@@ -1301,6 +1306,14 @@
 				69B241BD1940614E72853F365C2D238B /* SubStringExtension.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		84ECD06F29EFA1A8002C24A4 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				84ECD07029EFA1B5002C24A4 /* Device.swift */,
+			);
+			path = Device;
 			sourceTree = "<group>";
 		};
 		8A5E0A0544E856AF98E39457C235236B /* Other */ = {
@@ -1690,6 +1703,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEFF4E0429E434147C33EBE1F3F3BAA /* App.swift */,
+				84ECD07229EFA1E7002C24A4 /* Config.swift */,
 			);
 			name = Application;
 			path = Core/Classes/Application;
@@ -2277,9 +2291,11 @@
 				445A4E80A4C80A52578C9548ED5C617E /* BottomMenuCore.swift in Sources */,
 				E1CE0C5BFC248D5DE15237548A899687 /* BottomMenuView.storyboard in Sources */,
 				E43A6436F3B273C05074D59EA9C6247E /* BottomPopupController.swift in Sources */,
+				84ECD07329EFA1E7002C24A4 /* Config.swift in Sources */,
 				520E4795BC8E49975D968B0EAE5033EA /* BottomPopupCore.swift in Sources */,
 				70EB604E1F33B58D36BB307DA68E82E2 /* BottomPopupView.storyboard in Sources */,
 				C066CD63F013C1ABCAF6F3F7EC3B522D /* Core.swift in Sources */,
+				84ECD07129EFA1B5002C24A4 /* Device.swift in Sources */,
 				65B89B2EA3D1D040B3600B85B2163844 /* Core-dummy.m in Sources */,
 				F236002CE171DE3E386593877785A54E /* CustomNavigationController.swift in Sources */,
 				9B7CD138135E3458A94CD4493B3C6217 /* DataCollectionExtension.swift in Sources */,
