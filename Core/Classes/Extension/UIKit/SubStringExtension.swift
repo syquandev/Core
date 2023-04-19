@@ -1,10 +1,11 @@
 //
-//  SubStringExtensions.swift
+//  SubStringExtension.swift
 //  Core
 //
-//  Created by HU-IOS-DT-QUAN on 05/04/2023.
+//  Created by HU-IOS-DT-QUAN on 19/04/2023.
 //
 
+import Foundation
 import UIKit
 
 extension String.UTF16View{
@@ -35,13 +36,15 @@ extension String {
         do {
             let rgx = try NSRegularExpression(pattern: regex)
             let result = rgx.firstMatch(in: self, options: [], range: NSRange(self.startIndex..., in: self))
+            let length =  result?.range.length
+            let location =  result?.range.location
            
             if  result != nil {
                 return true
             }
             
             return false
-        } catch _ {
+        } catch let error {
 //            Log.console("invalid regex: \(error.localizedDescription)")
             return false
         }
