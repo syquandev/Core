@@ -178,6 +178,8 @@
 		841127A577BCEB2C4B5DABB91EED8892 /* AddRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B65710C34F47BE6943F37458BB42B4 /* AddRef.swift */; };
 		84ECD07129EFA1B5002C24A4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECD07029EFA1B5002C24A4 /* Device.swift */; };
 		84ECD07329EFA1E7002C24A4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECD07229EFA1E7002C24A4 /* Config.swift */; };
+		84ECD07929EFAAF0002C24A4 /* SColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECD07829EFAAF0002C24A4 /* SColorView.swift */; };
+		84ECD07B29EFAB02002C24A4 /* UILabelSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ECD07A29EFAB02002C24A4 /* UILabelSizeCalculator.swift */; };
 		85CDB3E7288DF014F2069A35345674AC /* StartWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC919A1F7BEA174DEB8460A907C36A6E /* StartWith.swift */; };
 		8780397195C27D63CF1D45521BD70D51 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F635129222CEA44644C1513E3C2C238 /* MapError.swift */; };
 		87E7D21E217AF06261C85E92A8A886FD /* AnonymousDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4540994A4189067580AD4724CA00F402 /* AnonymousDisposable.swift */; };
@@ -622,6 +624,8 @@
 		83A897ED80DD70BDAAC0954AFEEF98B3 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RxSwift/Observables/Optional.swift; sourceTree = "<group>"; };
 		84ECD07029EFA1B5002C24A4 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		84ECD07229EFA1E7002C24A4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		84ECD07829EFAAF0002C24A4 /* SColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SColorView.swift; sourceTree = "<group>"; };
+		84ECD07A29EFAB02002C24A4 /* UILabelSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelSizeCalculator.swift; sourceTree = "<group>"; };
 		85451C72776011271C442C8A7EC8C74C /* PublishSubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishSubject.swift; path = RxSwift/Subjects/PublishSubject.swift; sourceTree = "<group>"; };
 		85968DD156105ECAEFFF5CFB8EC03BB4 /* RetryWhen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryWhen.swift; path = RxSwift/Observables/RetryWhen.swift; sourceTree = "<group>"; };
 		85AEFB9797F73F445F5F8FDC0FCA8F1C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
@@ -1247,6 +1251,7 @@
 				43908A61D8917FFAAE21B865DD976817 /* UIViewAutoLayout.swift */,
 				1AC7C1D97A669E51EB5B0523418659A4 /* UIViewExtension.swift */,
 				A9E68DF885E75368B3549C066EBA7C15 /* UIViewFrameExtension.swift */,
+				84ECD07829EFAAF0002C24A4 /* SColorView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1304,6 +1309,7 @@
 			children = (
 				D38FAC5C81F859F8A6381422FE9021D2 /* StringConverter.swift */,
 				69B241BD1940614E72853F365C2D238B /* SubStringExtension.swift */,
+				84ECD07A29EFAB02002C24A4 /* UILabelSizeCalculator.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -2317,6 +2323,7 @@
 				A9186FBB6B205C366F97D7789E881048 /* LineScaleIndicator.swift in Sources */,
 				8EB793C0AC50F8E055AC6CE6FC15FA49 /* LoadingButton.swift in Sources */,
 				BAADE5EE85C79179B65F9F150B1A1FEF /* Localize.swift in Sources */,
+				84ECD07929EFAAF0002C24A4 /* SColorView.swift in Sources */,
 				3F68AF30202CD99038AAEC8D2FD6EFAA /* Main.storyboard in Sources */,
 				632B7AECE562266DCD4407F0FBC3E7D0 /* NVActivityIndicatorShape.swift in Sources */,
 				3D29BF6BF30514D195D790A83EACC135 /* Presenter.swift in Sources */,
@@ -2334,6 +2341,7 @@
 				8ECD9A43D141D1A511DF5B663E2426DA /* UIViewAutoLayout.swift in Sources */,
 				E1DE8C66E5CDAE73E1A77C6462CC8AD3 /* UIViewExtension.swift in Sources */,
 				67ACF8801FA485FDEB6A1509400AB06C /* UIViewFrameExtension.swift in Sources */,
+				84ECD07B29EFAB02002C24A4 /* UILabelSizeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
