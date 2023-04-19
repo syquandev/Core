@@ -47,5 +47,5 @@ TODO: Add long description of the pod here.
   s.dependency 'RxSwift'
   s.dependency 'ObjectMapper', '4.2.0'
   s.dependency 'FontAwesome'
-  s.dependency 'SwiftDate'
+  s.dependency 'SwiftDate', '6.3.1'
 end
