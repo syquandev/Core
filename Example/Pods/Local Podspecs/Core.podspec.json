@@ -29,6 +29,7 @@
       "Core/Classes/**/*.storyboard"
     ]
   },
+  "static_framework": true,
   "dependencies": {
     "RxSwift": [
 

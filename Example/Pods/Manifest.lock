@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Core: c9a60b6ff3aca9a343b60da44c786e1a4be01801
+  Core: f4b43d092ccf95efd42ecfe6265fa2681ff1c5e6
   FontAwesome: dd8c48bf965e771309d8af17c4d8579217b3e756
   FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81

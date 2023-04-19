@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Core'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of Core.'
 
 # This description is used to generate tags and improve search results.
@@ -42,8 +42,10 @@ TODO: Add long description of the pod here.
     'Core/Classes/**/*.storyboard']
   }
   
-#  s.dependency 'Network'
+  s.static_framework = true
+  
   s.dependency 'RxSwift'
   s.dependency 'ObjectMapper', '4.2.0'
   s.dependency 'FontAwesome'
+  s.dependency 'SwiftDate'
 end
