@@ -18,6 +18,8 @@ public enum AppColor{
     case money
     case clear
     case backgroundCell
+    case error
+    case warning
     
     public func getColor() -> UIColor{
         switch self {
@@ -41,6 +43,10 @@ public enum AppColor{
             return AppColorDefine.primary2
         case .backgroundCell:
             return AppColorDefine.primary2
+        case .error:
+            return UIColor(hexString: "#FFEBEE")!
+        case .warning:
+            return UIColor(hexString: "#FFF3E0")!
         }
     }
 }

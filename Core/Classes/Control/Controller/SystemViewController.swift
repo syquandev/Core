@@ -93,7 +93,6 @@ open class SystemViewController: UIViewController, UIGestureRecognizerDelegate {
     @objc func _copyViewName(sender: UIButton!) {
         let name = getViewControllerClassName()
         UIPasteboard.general.string = name
-        HUD.showAlert("View name Copied")
     }
     
     open override var preferredStatusBarStyle: UIStatusBarStyle{

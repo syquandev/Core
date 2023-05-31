@@ -129,12 +129,12 @@ public class ToastNotificationView: UIView {
 
     public init(title: String, titleFont: UIFont = .systemFont(ofSize: 13, weight: .regular),
                 subtitle: String? = nil, subtitleFont: UIFont = .systemFont(ofSize: 11, weight: .light),
-                icon: UIImage? = nil, iconSpacing: CGFloat = 16, position: Position = .top, onTap: (() -> ())? = nil) {
+                icon: UIImage? = nil, color: UIColor? = AppColor.primary.getColor(), iconSpacing: CGFloat = 16, position: Position = .top, onTap: (() -> ())? = nil) {
         self.position = position
 
         super.init(frame: .zero)
 
-        backgroundColor = AppColor.primary.getColor()
+        backgroundColor = color
 
         hStack.spacing = iconSpacing
 

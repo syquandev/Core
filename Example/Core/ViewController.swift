@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     
     @objc private func tapButton(_ sender: LoadingButton) {
         sender.isLoading ? sender.hideLoader() : sender.showLoader(userInteraction: true)
-        HUD.showAlert("Đã thêm vào danh sách bạn bè", icon: "hud_success")
+        HUD.showSuccess("Đã thêm vào danh sách bạn bè", icon: "hud_success")
+//        HUD.showWarning("Đã thêm vào danh sách bạn bè")
         let datas = BottomMenuItem.create(
             ["Đồng ý",
              "Hủy bỏ"])
